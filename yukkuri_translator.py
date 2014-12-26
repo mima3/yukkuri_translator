@@ -43,7 +43,8 @@ converter = {
 
 class MarisaTranslator:
     def __init__(self, user_dic):
-        self.mecab = MeCab.Tagger("-u " + user_dic)
+        #self.mecab = MeCab.Tagger("-u " + user_dic)
+        self.mecab = MeCab.Tagger("")
 
     def _check_san(self, n):
         """
